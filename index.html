@@ -13,8 +13,15 @@
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
+      position: sticky;
+      top: 0;
+      z-index:1;
     }
-    
+    @media (max-width:835px){
+      .navbar a{
+          display:none;
+      }
+    }
     /* Add a gray background color and some padding to the footer */
     
     footer {
@@ -27,7 +34,7 @@
     }
     .parallax {
       /* The image used */
-      background-image: url('https://i.pinimg.com/originals/df/bf/b4/dfbfb4ae3a326f3dbb298ab8bbf71bdb.png');
+      
     
       /* Full height */
       /* Set a specific height */
@@ -38,19 +45,42 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      padding: 8em;
       }
-      .parallax h1{
-        font-weight: 600;
-        font-size: 2.4em;
-        color: #085b70;
-        text-align:center;
+      .parallax p1{
+        font-size: 25px;
+	      color: #074158;
+	      margin-bottom: 5px;
+        
       }
+      .parallax1 {
+        /* The image used */
+        background-image: url('https://i.pinimg.com/originals/df/bf/b4/dfbfb4ae3a326f3dbb298ab8bbf71bdb.png');
+      
+        /* Full height */
+        /* Set a specific height */
+       
+  
+    /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .parallax1 h1{
+          font-weight: 600;
+          font-size: 2.4em;
+          color: #085b70;
+          text-align:center;
+          
+        }
       .jumbotron {
         /* The image used */
         background-image: url('1615216723645.jfif');
       
         /* Full height */
         /* Set a specific height */
+
         
   
     /* Create the parallax scrolling effect */
@@ -58,8 +88,18 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        min-height: 450px;
         }
-        
+        .jumbotron container{
+          font-weight: 600;
+          font-size: 5em;
+          text-align:center;
+        }
+        @media (max-width:800px){
+          .jumbotron{
+              display:none;
+          }
+        }
         .experience h1{
           font-weight: 600;
           font-size: 2.4em;
@@ -229,6 +269,7 @@
 	margin: 50px auto;
 	list-style: none;
 	text-align: center;
+  
 }
 .tilesWrap li {
 	display: inline-block;
@@ -241,9 +282,10 @@
 	margin: 10px;
 	font-family: 'helvetica', san-serif;
 	min-height: 25vh;
-	background: #00bceb;
+	background: #4cd0f1;
 	border: 1px solid #00dfdf;
 	text-align: left;
+  min-height: 450px;
 }
 .tilesWrap li h2 {
 	font-size: 114px;
@@ -256,13 +298,13 @@
 }
 .tilesWrap li h3 {
 	font-size: 20px;
-	color: #0a75a0;
+	color: #074158;
 	margin-bottom: 5px;
 }
 .tilesWrap li p {
 	font-size: 16px;
 	line-height: 18px;
-	color: #0a75a0;
+	color: #075170;
 	margin-top: 5px;
 }
 .tilesWrap li button {
@@ -396,11 +438,10 @@ background: linear-gradient(to right, #0ABFBC, #FC354C);
 <div class = "parallax">
   <div class ="Container"> 
     <br>
-    <h1>The are a lot of things that I like about me, but there are more thing that I would like to improve about myself.
+    <p1>The are a lot of things that I like about me, but there are more thing that I would like to improve about myself.
       I like videogames, Trading card games, Anime and spending time with my family, but I also like spending time evualating my decisions and convincing myself to not commit the same error twice.
       One of my favorite things is to teach, I appreciate knowledge and I enjoy to share it with other people, most of the time I'll surprise you with a random fun fact. 
-      <img src="foto1.png"  style="width:20%" class="centered">
-    </h1>
+    </p>
     
   </div>
 </div>
@@ -415,6 +456,8 @@ background: linear-gradient(to right, #0ABFBC, #FC354C);
       <li>
         <h2>01</h2>
         <h3>Empathy</h3>
+        <br>
+        <br>
         <p>
           Most of the time in order of stablishing a good communication with our peers first we need to listen and comprehend their ideas, I can guarantee that most of the time I do my best to listen and feel their emotions and understand their opinions.
         </p>
@@ -423,6 +466,7 @@ background: linear-gradient(to right, #0ABFBC, #FC354C);
       <li>
         <h2>02</h2>
         <h3>Assertive and effective communication</h3>
+        <br>
         <p>
           I'm truly feal that I can stablish both assertive and effective communication with my coworkers, I'm confindent in myself thinking that there is always a way to talk about a issue.
         </p>
@@ -431,6 +475,7 @@ background: linear-gradient(to right, #0ABFBC, #FC354C);
       <li>
         <h2>03</h2>
         <h3>Conflict and problem solving</h3>
+        <br>
         <p>
           With the help of both the empathy and the communication we can deal with the conflict and the problems, 
           most of the time I feel that each of the soft skills complements the others in order to achieve a perfect working enviroment.
@@ -440,6 +485,8 @@ background: linear-gradient(to right, #0ABFBC, #FC354C);
       <li>
         <h2>04</h2>
         <h3>Teamwork</h3>
+        <br>
+        <br>
         <p>
           A team is as strong as the capabilities of each member complements each other, we must bond with the team in order to become a perfect team!
         </p>
@@ -455,7 +502,7 @@ background: linear-gradient(to right, #0ABFBC, #FC354C);
   <h1>Technologies and SuperBadges</h1>
 </div>
 <br>
-<div class="parallax">
+<div class="parallax1">
   <div class="row">
     <div class="col-sm-4">
       <img src="BeFunky-collage-removebg-preview.png" class="img-responsive" style="width:100%" >
